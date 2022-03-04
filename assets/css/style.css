@@ -1,0 +1,11 @@
+li {
+    color:indianred
+}
+
+body {
+    background-color: darkslategrey;
+}
+
+li {
+    float: inline-end;
+}
