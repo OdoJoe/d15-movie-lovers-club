@@ -6,6 +6,22 @@ body {
     background-color: darkslategrey;
 }
 
-li {
-    float: inline-end;
+/* hero image styling */
+img {
+    display: block;
+    max-width: 80em;
+    max-height: 20em;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* header styling*/
+header {
+    background-color:deepskyblue;
+}
+
+/* showings styling */
+.showings {
+    color:aquamarine;
+    max-height: 20em;
 }
