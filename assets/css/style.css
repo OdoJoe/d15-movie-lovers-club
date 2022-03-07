@@ -1,9 +1,37 @@
-li {
-    color:indianred
-}
+@import url('https://fonts.googleapis.com/css2?family=family=Sansita+Swashed:wght@300&display=swap');
 
 body {
-    background-color: darkslategrey;
+    font-family: sansita-swashed, sans-serif;
+    font-weight: 300;
+    color: burlywood;
+    background-color:darkslategray
+}
+
+#club-name {
+    float: left;
+    font-size: 200%;
+}
+
+/*navigation links style*/
+
+#links li {
+    float: right;
+    list-style-type: none;
+    margin-right: 2em;
+}
+
+a {
+    color: aquamarine;
+}
+
+.showings h2 {
+    text-transform: uppercase;
+    border-bottom: 1px solid;
+    text-align: center;
+}
+
+.showings p {
+    text-align: center;
 }
 
 /* hero image styling */
@@ -13,11 +41,13 @@ img {
     max-height: 20em;
     margin-right: auto;
     margin-left: auto;
+    margin-top: 3em;
 }
 
 /* header styling*/
 header {
-    background-color:deepskyblue;
+    background-color:midnightblue;
+    padding: 4em;
 }
 
 /* showings styling */
