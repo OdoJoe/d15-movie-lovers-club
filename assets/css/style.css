@@ -9,7 +9,13 @@ body {
 
 #club-name {
     float: left;
-    font-size: 200%;
+    font-size: 150%;
+}
+
+/* header styling*/
+header {
+    background-color:midnightblue;
+    padding: 1em;
 }
 
 /*navigation links style*/
@@ -20,6 +26,18 @@ body {
     margin-right: 2em;
 }
 
+#links a {
+    text-decoration: none;
+}
+
+#club-name, #links {
+    line-height: 1px;
+}
+
+#links a:hover {
+    border-bottom: 1px solid;
+}
+
 a {
     color: aquamarine;
 }
@@ -27,6 +45,10 @@ a {
 .showings h2 {
     text-transform: uppercase;
     border-bottom: 1px solid;
+    text-align: center;
+}
+
+.showings h3 {
     text-align: center;
 }
 
@@ -42,12 +64,6 @@ img {
     margin-right: auto;
     margin-left: auto;
     margin-top: 3em;
-}
-
-/* header styling*/
-header {
-    background-color:midnightblue;
-    padding: 4em;
 }
 
 /* showings styling */
