@@ -95,3 +95,13 @@ footer, ul {
 .socials > li {
     display: inline;
 }
+
+/* movie poster styling */
+
+#posters {
+    column-count: 3;
+}
+
+#posters > img {
+    float: left;
+}
