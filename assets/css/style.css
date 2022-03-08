@@ -71,3 +71,27 @@ img {
     color:aquamarine;
     max-height: 20em;
 }
+
+/* footer styling*/
+
+footer {
+    padding: 1em;
+    background-color: midnightblue;
+}
+
+.socials {
+    text-align: center;
+}
+
+footer, ul {
+    list-style: none;
+}
+
+.socials, i {
+    font-size: 120%;
+    margin: 1%;
+}
+
+.socials > li {
+    display: inline;
+}
