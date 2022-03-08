@@ -105,3 +105,13 @@ footer, ul {
 #posters > img {
     float: left;
 }
+
+#cabin h2 {
+    text-align: center;
+    font-size: 500%;
+}
+
+#join-us {
+    text-align: center;
+    font-size: 200%;
+}
