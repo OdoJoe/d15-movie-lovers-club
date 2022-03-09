@@ -56,6 +56,19 @@ a {
     text-align: center;
 }
 
+/* Who we are and Why you should join styling */
+
+.who {
+    text-align: center;
+    color: burlywood;
+}
+
+.why {
+    text-align: center;
+    color: burlywood;
+}
+
+
 /* hero image styling */
 img {
     display: block;
@@ -115,3 +128,44 @@ footer, ul {
     text-align: center;
     font-size: 200%;
 }
+
+/* scale to screen sixes 1200px wide and down */
+@media screen and (max-width: 1200px) {
+    #posters {
+        column-count: 2;
+    }
+}
+
+/* scale to screen sizes 768px wide and down*/
+
+@media screen and (max-width: 768px) {
+    #links {
+        margin-left: 30px;
+        margin-bottom: 20px;
+        line-height: 20px;
+    }
+    #posters {
+        column-count: 1;
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #club-name {
+        clear: left;
+        float: left;
+    }
+}
+
+/* scale to screen sizes 690px wide and down */
+
+@media screen and (max-width: 768px) {
+    #links {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        line-height: 10px;
+    }
+}
+
+
+
