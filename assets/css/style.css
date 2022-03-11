@@ -1,24 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=family=Sansita+Swashed:wght@300&display=swap');
 
+html {
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: sansita-swashed, sans-serif;
     font-weight: 300;
     color: burlywood;
-    background-color:darkslategray;
+    background-color: darkslategray;
     min-width: 360px;
-    margin:0px;
-    border:0px;
-    padding:0px;
+    border: 0px;
     width: 100%;
+    min-height: 100%;
+    height: auto;
+    margin: 0 0 100px;
+    padding: 0px 0px 25px;
 }
 
 section {
-    margin:0px;
-    border:0px;
-    padding:0px;
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
     width: 100%;
 
 }
+
 #club-name {
     float: left;
     font-size: 150%;
@@ -33,14 +41,13 @@ header {
 }
 
 #nav-id {
-    float:right;
+    float: right;
     min-width: 400px;
-
 }
 
 /*navigation links style*/
 #links li {
-    display:inline-block;
+    display: inline-block;
     list-style-type: none;
     margin-right: 2em;
 }
@@ -49,7 +56,12 @@ header {
     text-decoration: none;
 }
 
-#club-name, #links {
+.active {
+    border-bottom: 1px solid;
+}
+
+#club-name,
+#links {
     line-height: 1px;
 }
 
@@ -61,17 +73,20 @@ a {
     color: aquamarine;
 }
 
+/* style for monthly movie showings */
 .showings {
+    color: aquamarine;
+    max-height: 20em;
     width: 100%;
     margin: 0px 0px 0px 0px;
     padding: 0px 0px 0px 0px;
     overflow: hidden;
 }
+
 .showings h2 {
     text-transform: uppercase;
     border-bottom: 1px solid;
     text-align: center;
-
 }
 
 .showings h3 {
@@ -82,12 +97,12 @@ a {
 .showings p {
     text-align: center;
 }
+
 p {
     text-align: center;
 }
 
-/* Who we are and Why you should join styling */
-
+/* Who we are and why you should join styling */
 .who {
     text-align: center;
     color: burlywood;
@@ -98,18 +113,7 @@ p {
     color: burlywood;
 }
 
-/* hero image styling */
-/*
-img {
-    display: block;
-    max-width: 80em;
-    max-height: 20em;
-    margin-right: auto;
-    margin-left: auto;
-    margin-top: 3em;
-}
-*/
-
+/* resize home image for desktop, tablet and phone */
 @media screen and (max-width: 8000px) {
     #home-pic img {
         width: 717px;
@@ -136,7 +140,6 @@ img {
     }
 }
 
-/* home-pic styling */
 @media screen and (max-width: 540px) {
     #home-pic img {
         width: 359px;
@@ -148,13 +151,14 @@ img {
         margin-left: auto;
         margin-top: 3em;
     }
-    
+
 }
-#home-pic{
+
+#home-pic {
     text-align: center;
 }
 
-/* form cabin pic styling */
+/* resize cabin image for desktop, tablet and phone */
 @media screen and (max-width: 8000px) {
     #cabin-pic img {
         width: 717px;
@@ -181,7 +185,6 @@ img {
     }
 }
 
-/* home-pic styling */
 @media screen and (max-width: 540px) {
     #cabin-pic img {
         width: 359px;
@@ -193,49 +196,48 @@ img {
         margin-left: auto;
         margin-top: 3em;
     }
-    
-}
-#cabin-pic{
-    text-align: center;
+
 }
 
-/* showings styling */
-.showings {
-    color:aquamarine;
-    max-height: 20em;
+#cabin-pic {
+    text-align: center;
 }
 
 /* footer styling*/
-
 footer {
-    padding: 1em;
     background-color: midnightblue;
+    position: absolute;
+    bottom: 0;
+    height: 100px;
     width: 100%;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+footer ul {
+    text-align: center;
+    list-style: none;
 }
 
 .socials {
     text-align: center;
 }
 
-footer, ul {
-    list-style: none;
-}
-
-.socials, i {
+.socials i {
     font-size: 120%;
     margin: 1%;
 }
 
-.socials > li {
+.socials li {
     display: inline;
 }
 
 /* movie poster styling */
-
 #posters {
     text-align: center;
     width: 100%;
 }
+
 #posters-div {
     column-count: 3;
     width: 80%;
@@ -256,28 +258,58 @@ footer, ul {
     margin-top: 3em;
 }
 
-/* styling form and join us page */
+/* styling join us form and join us page */
+@media screen {
+    label {
+        display: inline-block;
+        width: 210px;
+        text-align: right;
+    }
 
-label {
-    display: inline-block;
-    width: 210px;
-    text-align: right;
+    #cabin h2 {
+        text-align: center;
+        font-size: 500%;
+    }
+
+    #join-us-section {
+        text-align: center;
+    }
+
+    #join-us {
+        text-align: center;
+        font-size: 1em;
+    }
 }
 
-#cabin h2 {
-    text-align: center;
-    font-size: 500%;
+@media screen and (max-width:400px) {
+    #join-us label {
+        width: 210px;
+        text-align: center;
+        margin: 0px 0px 0px 0px;
+        border: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    #cabin h2 {
+        text-align: center;
+        font-size: 500%;
+    }
+
+    #join-us-section {
+        text-align: center;
+    }
+
+    #join-us {
+        text-align: center;
+        font-size: 1em;
+    }
+
+    #join-us input {
+        text-align: left;
+    }
 }
 
-#join-us-section {
-    text-align: center;
-}
-#join-us {
-    text-align: center;
-    font-size: 1em;
-}
-
-/* scale to screen sixes 720px wide and down */
+/* scale to screen sizes */
 @media screen and (max-width: 850px) {
     #posters-div {
         column-count: 2;
@@ -286,7 +318,7 @@ label {
     }
 }
 
-/* scale to screen sixes 720px wide and down */
+/* scale to screen sizes */
 @media screen and (max-width: 550px) {
     #posters-div {
         column-count: 1;
@@ -295,20 +327,20 @@ label {
         padding-left: 4em;
     }
 }
-/* scale to screen sizes 768px wide and down*/
-@media screen and (max-width: 700px){
+
+/* scale to screen sizes */
+@media screen and (max-width: 700px) {
     #club-name {
         clear: left;
         float: left;
     }
 
     #page-header {
-        min-height:60px;
+        min-height: 60px;
     }
 }
 
-/* scale to screen sizes 690px wide and down */
-
+/* scale to screen sizes */
 @media screen and (max-width: 425px) {
     #links {
         margin-left: 20px;
@@ -317,7 +349,3 @@ label {
         white-space: nowrap;
     }
 }
-
-
-
-
