@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=family=Sansita+Swashed:wght@300&display=swap');
+
 
 html {
     position: relative;
@@ -6,10 +6,10 @@ html {
 }
 
 body {
-    font-family: sansita-swashed, sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
     color: burlywood;
-    background-color: darkslategray;
+    background-color: #2F4F4F;
     min-width: 360px;
     border: 0px;
     width: 100%;
@@ -34,7 +34,7 @@ section {
 
 /* header styling*/
 header {
-    background-color: #5900ff;
+    background-color: #357367;
     padding: 1em;
     width: 100%;
     min-height: 30px;
@@ -205,7 +205,7 @@ p {
 
 /* footer styling*/
 footer {
-    background-color: midnightblue;
+    background-color: #357367;
     position: absolute;
     bottom: 0;
     height: 100px;
