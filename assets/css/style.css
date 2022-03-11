@@ -5,10 +5,11 @@ body {
     font-weight: 300;
     color: burlywood;
     background-color:darkslategray;
-    min-width: 425px;
+    min-width: 360px;
     margin:0px;
     border:0px;
     padding:0px;
+    width: 100%;
 }
 
 section {
@@ -60,17 +61,28 @@ a {
     color: aquamarine;
 }
 
+.showings {
+    width: 100%;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    overflow: hidden;
+}
 .showings h2 {
     text-transform: uppercase;
     border-bottom: 1px solid;
     text-align: center;
+
 }
 
 .showings h3 {
     text-align: center;
+
 }
 
 .showings p {
+    text-align: center;
+}
+p {
     text-align: center;
 }
 
@@ -87,6 +99,7 @@ a {
 }
 
 /* hero image styling */
+/*
 img {
     display: block;
     max-width: 80em;
@@ -94,6 +107,96 @@ img {
     margin-right: auto;
     margin-left: auto;
     margin-top: 3em;
+}
+*/
+
+@media screen and (max-width: 8000px) {
+    #home-pic img {
+        width: 717px;
+        height: 477px;
+        display: block;
+        max-width: 80em;
+        max-height: 20em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3em;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #home-pic img {
+        width: 537px;
+        height: 358px;
+        display: block;
+        max-width: 80em;
+        max-height: 20em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3em;
+    }
+}
+
+/* home-pic styling */
+@media screen and (max-width: 540px) {
+    #home-pic img {
+        width: 359px;
+        height: 239px;
+        display: block;
+        max-width: 80em;
+        max-height: 20em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3em;
+    }
+    
+}
+#home-pic{
+    text-align: center;
+}
+
+/* form cabin pic styling */
+@media screen and (max-width: 8000px) {
+    #cabin-pic img {
+        width: 717px;
+        height: 477px;
+        display: block;
+        max-width: 80em;
+        max-height: 20em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3em;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    #cabin-pic img {
+        width: 537px;
+        height: 358px;
+        display: block;
+        max-width: 80em;
+        max-height: 20em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3em;
+    }
+}
+
+/* home-pic styling */
+@media screen and (max-width: 540px) {
+    #cabin-pic img {
+        width: 359px;
+        height: 239px;
+        display: block;
+        max-width: 80em;
+        max-height: 20em;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 3em;
+    }
+    
+}
+#cabin-pic{
+    text-align: center;
 }
 
 /* showings styling */
@@ -107,6 +210,7 @@ img {
 footer {
     padding: 1em;
     background-color: midnightblue;
+    width: 100%;
 }
 
 .socials {
@@ -129,13 +233,35 @@ footer, ul {
 /* movie poster styling */
 
 #posters {
+    text-align: center;
+    width: 100%;
+}
+#posters-div {
     column-count: 3;
+    width: 80%;
+    text-align: center;
+    column-width: 15em;
+    max-width: 50em;
+    margin: auto;
 }
 
-#posters > img {
+#posters-div img {
     float: left;
     margin-right: 3em;
     margin-left: 8em;
+    width: 15em;
+    height: 20em;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3em;
+}
+
+/* styling form and join us page */
+
+label {
+    display: inline-block;
+    width: 210px;
+    text-align: right;
 }
 
 #cabin h2 {
@@ -143,18 +269,32 @@ footer, ul {
     font-size: 500%;
 }
 
+#join-us-section {
+    text-align: center;
+}
 #join-us {
     text-align: center;
-    font-size: 200%;
+    font-size: 1em;
 }
 
-/* scale to screen sixes 1200px wide and down */
-@media screen and (max-width: 1200px) {
-    #posters {
+/* scale to screen sixes 720px wide and down */
+@media screen and (max-width: 850px) {
+    #posters-div {
         column-count: 2;
+        text-align: center;
+        padding-left: 3em;
     }
 }
 
+/* scale to screen sixes 720px wide and down */
+@media screen and (max-width: 550px) {
+    #posters-div {
+        column-count: 1;
+        text-align: center;
+        position: relative;
+        padding-left: 4em;
+    }
+}
 /* scale to screen sizes 768px wide and down*/
 @media screen and (max-width: 700px){
     #club-name {
@@ -175,11 +315,6 @@ footer, ul {
         margin-bottom: 10px;
         line-height: 10px;
         white-space: nowrap;
-    }
-
-    #posters {
-        column-count: 1;
-        position: relative;
     }
 }
 
