@@ -1,8 +1,12 @@
-
-
 html {
     position: relative;
     min-height: 100%;
+}
+
+html,
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
 body {
@@ -100,6 +104,8 @@ a {
 
 p {
     text-align: center;
+    padding-left: 2%;
+    padding-right: 5%;
 }
 
 /* Who we are and why you should join styling */
@@ -286,7 +292,6 @@ footer ul {
         width: 210px;
         text-align: center;
         margin: 0px 0px 0px 0px;
-        border: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
     }
 
@@ -348,4 +353,38 @@ footer ul {
         line-height: 10px;
         white-space: nowrap;
     }
+}
+
+/* button styles */
+
+.btn {
+    background: #55708C;
+    background-image: -webkit-linear-gradient(top, #55708C, #D796A9);
+    background-image: -moz-linear-gradient(top, #55708C, #D796A9);
+    background-image: -ms-linear-gradient(top, #55708C, #D796A9);
+    background-image: -o-linear-gradient(top, #55708C, #D796A9);
+    background-image: linear-gradient(to bottom, #55708C, #D796A9);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #2F4F4F;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    border: solid #F9F871 2px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #4C9774;
+    background-image: -webkit-linear-gradient(top, #4C9774, #F9F871);
+    background-image: -moz-linear-gradient(top, #4C9774, #F9F871);
+    background-image: -ms-linear-gradient(top, #4C9774, #F9F871);
+    background-image: -o-linear-gradient(top, #4C9774, #F9F871);
+    background-image: linear-gradient(to bottom, #4C9774, #F9F871);
+    text-decoration: none;
+}
+
+#home-btn {
+    text-align: center;
 }
