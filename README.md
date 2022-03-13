@@ -1,5 +1,7 @@
 # D15 Movie Lovers Club
-This is the club website for the local movie club called D15 Movie Lovers Club. View the live project here:
+This is the club website for the local movie club called D15 Movie Lovers Club. View the live project here: 
+
+https://odojoe.github.io/d15-movie-lovers-club/
 
 # User Experience UX
 - ## User Stories
